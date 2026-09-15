@@ -1,0 +1,530 @@
+{
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/sbm/corner-imc-sch/fm%20guide%20chinese.pdf": {
+  "etag": "\"80af5298f72ddc1:0\"",
+  "last_modified": "Thu, 25 Sep 2025 08:37:15 GMT",
+  "size": 612765,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/The%20Choice%20of%20Bank%20Counterparties_EDB%20web_tc.pdf": {
+  "etag": "\"04c6f34fabfdb1:0\"",
+  "last_modified": "Thu, 08 May 2025 09:18:48 GMT",
+  "size": 264736,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/EDBC22003C.pdf": {
+  "etag": "\"80372497f80d81:0\"",
+  "last_modified": "Wed, 15 Jun 2022 06:13:31 GMT",
+  "size": 802673,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/EDBCM15172C.pdf": {
+  "etag": "\"0e158d6265fd11:0\"",
+  "last_modified": "Thu, 04 Feb 2016 08:34:18 GMT",
+  "size": 526693,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/EDBCM23043C.pdf": {
+  "etag": "\"0c6c2f4db57d91:0\"",
+  "last_modified": "Thu, 16 Mar 2023 07:50:20 GMT",
+  "size": 1113169,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/ICAC%20Governance%20and%20Internal%20Contral%20in%20Schools%20C.pdf": {
+  "etag": "\"0da45189d45d41:0\"",
+  "last_modified": "Thu, 06 Sep 2018 04:50:12 GMT",
+  "size": 3077835,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/naming_rights.pdf": {
+  "etag": "\"03bca175338d81:0\"",
+  "last_modified": "Tue, 15 Mar 2022 09:57:34 GMT",
+  "size": 1633535,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/Corruption_Prevention_Toolkit_KG_c.pdf": {
+  "etag": "\"80fe93195338d81:0\"",
+  "last_modified": "Tue, 15 Mar 2022 09:57:37 GMT",
+  "size": 8882627,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/c_Conduct.docx": {
+  "etag": "\"805490a9d45d41:0\"",
+  "last_modified": "Thu, 06 Sep 2018 04:49:49 GMT",
+  "size": 88188,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/c_Conduct_manager.docx": {
+  "etag": "\"0bef799d45d41:0\"",
+  "last_modified": "Thu, 06 Sep 2018 04:49:48 GMT",
+  "size": 91555,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/Conduct_KG_c.docx": {
+  "etag": "\"80a431175338d81:0\"",
+  "last_modified": "Tue, 15 Mar 2022 09:57:33 GMT",
+  "size": 1740005,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/c_Declaration.docx": {
+  "etag": "\"80aef2c9d45d41:0\"",
+  "last_modified": "Thu, 06 Sep 2018 04:49:53 GMT",
+  "size": 35395,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/c_Declaration_manager.docx": {
+  "etag": "\"8081c1b9d45d41:0\"",
+  "last_modified": "Thu, 06 Sep 2018 04:49:51 GMT",
+  "size": 37329,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/c_Acceptance.docx": {
+  "etag": "\"80275f99d45d41:0\"",
+  "last_modified": "Thu, 06 Sep 2018 04:49:47 GMT",
+  "size": 34445,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/c_Acceptance_manager.docx": {
+  "etag": "\"0376469d45d41:0\"",
+  "last_modified": "Thu, 06 Sep 2018 04:49:42 GMT",
+  "size": 37976,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/c_Gifts.docx": {
+  "etag": "\"80855f9d45d41:0\"",
+  "last_modified": "Thu, 06 Sep 2018 04:49:57 GMT",
+  "size": 35561,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/c_Gifts2.docx": {
+  "etag": "\"09fedf9d45d41:0\"",
+  "last_modified": "Thu, 06 Sep 2018 04:49:58 GMT",
+  "size": 34667,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/c_example.docx": {
+  "etag": "\"80db23e9d45d41:0\"",
+  "last_modified": "Thu, 06 Sep 2018 04:49:55 GMT",
+  "size": 33634,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/c_example_manager.docx": {
+  "etag": "\"0458bd9d45d41:0\"",
+  "last_modified": "Thu, 06 Sep 2018 04:49:54 GMT",
+  "size": 34808,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/donation%20register-c.doc": {
+  "etag": "\"807cfbcfe81bdc1:0\"",
+  "last_modified": "Tue, 02 Sep 2025 09:06:05 GMT",
+  "size": 36352,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-donation-acceptance/c_Outside_Employment.doc": {
+  "etag": "\"80bee5deccd3cd1:0\"",
+  "last_modified": "Thu, 06 Dec 2012 16:15:13 GMT",
+  "size": 33792,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/note-improper-sales/points_to_note_on_improper_sales_c.pdf": {
+  "etag": "\"8091b4ddccd3cd1:0\"",
+  "last_modified": "Thu, 06 Dec 2012 16:15:11 GMT",
+  "size": 102223,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-capacity-enhancement-grant/Ground%20Rules%20and%20Procedures_tc.pdf": {
+  "etag": "\"8017161f78dcdc1:0\"",
+  "last_modified": "Tue, 05 May 2026 10:15:39 GMT",
+  "size": 258223,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-capacity-enhancement-grant/Calculation%20of%20CEG_tc.pdf": {
+  "etag": "\"0d149f7a4dd1:0\"",
+  "last_modified": "Thu, 25 Jun 2026 08:10:18 GMT",
+  "size": 140864,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-capacity-enhancement-grant/Accounting%20Arrangement_tc.pdf": {
+  "etag": "\"0817d1e78dcdc1:0\"",
+  "last_modified": "Tue, 05 May 2026 10:15:38 GMT",
+  "size": 192964,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/User%20Guide_OEBG_2026_c.pdf": {
+  "etag": "\"0a83a78633dd1:0\"",
+  "last_modified": "Mon, 24 Aug 2026 05:08:52 GMT",
+  "size": 653927,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/User%20Guide_EOEBG_2026_c.pdf": {
+  "etag": "\"0a83a78633dd1:0\"",
+  "last_modified": "Mon, 24 Aug 2026 05:08:52 GMT",
+  "size": 916717,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/User%20Guide_CFEG_2026_c.pdf": {
+  "etag": "\"0a83a78633dd1:0\"",
+  "last_modified": "Mon, 24 Aug 2026 05:08:52 GMT",
+  "size": 292180,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/Reminder%20List%20for%20Using%20OEBG%20and%20CFEG_2026_c.pdf": {
+  "etag": "\"0a83a78633dd1:0\"",
+  "last_modified": "Mon, 24 Aug 2026 05:08:52 GMT",
+  "size": 289452,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/Reminder%20List%20for%20Using%20EOEBG_2026_c.pdf": {
+  "etag": "\"0a83a78633dd1:0\"",
+  "last_modified": "Mon, 24 Aug 2026 05:08:52 GMT",
+  "size": 333378,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/O_Sec_GenD_Table%20I_2026_c.pdf": {
+  "etag": "\"0d55f9a48dcdc1:0\"",
+  "last_modified": "Tue, 05 May 2026 04:35:30 GMT",
+  "size": 329406,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/O_Pri_GenD_Table%20II_2026_c.pdf": {
+  "etag": "\"0d55f9a48dcdc1:0\"",
+  "last_modified": "Tue, 05 May 2026 04:35:30 GMT",
+  "size": 312111,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/O_Sec_SpD_Table%20III_2026_c_r%206.2026.pdf": {
+  "etag": "\"80ca2da6a57dd1:0\"",
+  "last_modified": "Mon, 29 Jun 2026 08:59:53 GMT",
+  "size": 204752,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/O_Pri_SpD_Table%20IV_2026_c_r%206.2026.pdf": {
+  "etag": "\"80ca2da6a57dd1:0\"",
+  "last_modified": "Mon, 29 Jun 2026 08:59:53 GMT",
+  "size": 340131,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/CFEG_2026_c.pdf": {
+  "etag": "\"0d55f9a48dcdc1:0\"",
+  "last_modified": "Tue, 05 May 2026 04:35:30 GMT",
+  "size": 239958,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/E_Table%20I_2026_c.pdf": {
+  "etag": "\"0d55f9a48dcdc1:0\"",
+  "last_modified": "Tue, 05 May 2026 04:35:30 GMT",
+  "size": 247598,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/E_Sec_Table%20II_2026_c_r%206.2026.pdf": {
+  "etag": "\"80ca2da6a57dd1:0\"",
+  "last_modified": "Mon, 29 Jun 2026 08:59:53 GMT",
+  "size": 290927,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/E_Pri_Table%20III_2026_c_r%206.2026.pdf": {
+  "etag": "\"80ca2da6a57dd1:0\"",
+  "last_modified": "Mon, 29 Jun 2026 08:59:53 GMT",
+  "size": 392237,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/E_Spe_Table%20IV_2026_c_r%206.2026.pdf": {
+  "etag": "\"80ca2da6a57dd1:0\"",
+  "last_modified": "Mon, 29 Jun 2026 08:59:53 GMT",
+  "size": 428449,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/ref-e-oebg-cfeg/AC%20Grant%20in%20Aided%20Schools_c.pdf": {
+  "etag": "\"03df899d957d51:0\"",
+  "last_modified": "Wed, 21 Aug 2019 04:33:38 GMT",
+  "size": 251477,
+  "fetched": "2026-09-14"
+ },
+ "https://applications.edb.gov.hk/circular/upload/EDBC/EDBC25018C.pdf": {
+  "etag": "\"a939c720917dc1:0\"",
+  "last_modified": "Wed, 27 Aug 2025 04:14:48 GMT",
+  "size": 391515,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-trading-operations/Appendix%201(C).pdf": {
+  "etag": "\"0ff11aea8bdd81:0\"",
+  "last_modified": "Thu, 01 Sep 2022 02:15:18 GMT",
+  "size": 629060,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-trading-operations/Appendix%202(C).pdf": {
+  "etag": "\"80e8841e9c4d91:0\"",
+  "last_modified": "Wed, 02 Aug 2023 02:30:09 GMT",
+  "size": 317936,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-trading-operations/Appendix%203(C).pdf": {
+  "etag": "\"0e81bb0333d21:0\"",
+  "last_modified": "Wed, 31 Aug 2016 02:59:28 GMT",
+  "size": 332459,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-trading-operations/Appendix%204(C).pdf": {
+  "etag": "\"088c5e963f7d91:0\"",
+  "last_modified": "Thu, 05 Oct 2023 08:14:08 GMT",
+  "size": 289879,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-trading-operations/Appendix%205(C).pdf": {
+  "etag": "\"807eb4b0333d21:0\"",
+  "last_modified": "Wed, 31 Aug 2016 02:59:29 GMT",
+  "size": 288681,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-trading-operations/donation%20register-c.pdf": {
+  "etag": "\"80167cede71bdc1:0\"",
+  "last_modified": "Tue, 02 Sep 2025 08:59:45 GMT",
+  "size": 136229,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-trading-operations/list%20of%20major%20items_tender%20doc-c.pdf": {
+  "etag": "\"801848e1ccd3cd1:0\"",
+  "last_modified": "Thu, 06 Dec 2012 16:15:17 GMT",
+  "size": 251893,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/notes-sch-fin/ref-trading-operations/points%20to%20note%20o%20marking%20scheme_c.pdf": {
+  "etag": "\"801848e1ccd3cd1:0\"",
+  "last_modified": "Thu, 06 Dec 2012 16:15:17 GMT",
+  "size": 201805,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/trg/TRG_guidelines_C.pdf": {
+  "etag": "\"804ced8bed15dd1:0\"",
+  "last_modified": "Fri, 17 Jul 2026 13:09:49 GMT",
+  "size": 412715,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/trg/Annex%20I_2026_C.pdf": {
+  "etag": "\"024ccefcc14dd1:0\"",
+  "last_modified": "Thu, 16 Jul 2026 02:43:52 GMT",
+  "size": 153343,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/trg/Annex%20II_2026_C.doc": {
+  "etag": "\"0f6266bf115dd1:0\"",
+  "last_modified": "Fri, 17 Jul 2026 13:37:32 GMT",
+  "size": 72704,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/trg/Annex%20III_2026_C.doc": {
+  "etag": "\"804ced8bed15dd1:0\"",
+  "last_modified": "Fri, 17 Jul 2026 13:09:49 GMT",
+  "size": 105984,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/trg/Annex_IV_2026_C.pdf": {
+  "etag": "\"804ced8bed15dd1:0\"",
+  "last_modified": "Fri, 17 Jul 2026 13:09:49 GMT",
+  "size": 156016,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/trg/Annex%20II_C.doc": {
+  "etag": "\"0d43bf4bfb6d81:0\"",
+  "last_modified": "Tue, 23 Aug 2022 07:14:16 GMT",
+  "size": 68096,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/trg/Annex%20III_C.doc": {
+  "etag": "\"0d43bf4bfb6d81:0\"",
+  "last_modified": "Tue, 23 Aug 2022 07:14:16 GMT",
+  "size": 88064,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/tips-handling-gov-subventions/Tips%20on%20handling%20govt%20subventions%20for%20aided%20schools_c_2026.pdf": {
+  "etag": "\"0cc6eb38633dd1:0\"",
+  "last_modified": "Mon, 24 Aug 2026 05:09:12 GMT",
+  "size": 448043,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/tips-handling-gov-subventions/guide_to_cg_for_so_tc_2015.pdf": {
+  "etag": "\"09df9c9b8cdd01:0\"",
+  "last_modified": "Mon, 03 Aug 2015 06:51:14 GMT",
+  "size": 8054462,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/procurement-procedures-in-aided-schools/EDBC13004C.pdf": {
+  "etag": "\"0a925fd384adc1:0\"",
+  "last_modified": "Fri, 31 Oct 2025 07:35:54 GMT",
+  "size": 403844,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/procurement-procedures-in-aided-schools/Guidelines%20on%20Procurement%20Procedures_TC.pdf": {
+  "etag": "\"016f3e46f4dd1:0\"",
+  "last_modified": "Thu, 25 Jun 2026 06:57:32 GMT",
+  "size": 955574,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/procurement-procedures-in-aided-schools/Annexes%20to%20Guidelines%20on%20Procurement%20Procedures%20in%20Aided%20Schools%20Trad%20Chi_2024.doc": {
+  "etag": "\"015917fe930dc1:0\"",
+  "last_modified": "Mon, 29 Sep 2025 02:33:54 GMT",
+  "size": 262656,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/procurement-procedures-in-aided-schools/Procurement%20procedures%20briefing%20for%20aided%20schools_Nov%202025.pdf": {
+  "etag": "\"80ce2ab1c68dc1:0\"",
+  "last_modified": "Mon, 08 Dec 2025 08:24:17 GMT",
+  "size": 2499667,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/procurement-procedures-in-aided-schools/Experience%20sharing%20on%20school%20audit_Nov%202025.pdf": {
+  "etag": "\"03892a1c68dc1:0\"",
+  "last_modified": "Mon, 08 Dec 2025 08:24:16 GMT",
+  "size": 1221825,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/procurement-procedures-in-aided-schools/Procurement%20Procedures%20in%20Aided%20Schools_FAQs.pdf": {
+  "etag": "\"806a999c3e4adc1:0\"",
+  "last_modified": "Fri, 31 Oct 2025 08:16:09 GMT",
+  "size": 409629,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/procurement-procedures-in-aided-schools/Procurement%20Checklist_2023.pdf": {
+  "etag": "\"804f1c171cc4d91:0\"",
+  "last_modified": "Tue, 01 Aug 2023 02:01:31 GMT",
+  "size": 626333,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/2026_Financial%20Mgt%20Seminars_Primary.pdf": {
+  "etag": "\"051cb4679a4dc1:0\"",
+  "last_modified": "Mon, 23 Feb 2026 04:02:50 GMT",
+  "size": 20767514,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/2026_Financial%20Mgt%20Seminars_Secondary.pdf": {
+  "etag": "\"80274f5f3da2dc1:0\"",
+  "last_modified": "Fri, 20 Feb 2026 07:48:59 GMT",
+  "size": 5539550,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/2026_Financial%20Mgt%20Seminars_School%20Audit.pdf": {
+  "etag": "\"091b65e3da2dc1:0\"",
+  "last_modified": "Fri, 20 Feb 2026 07:48:58 GMT",
+  "size": 458039,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/2026_Financial%20Mgt%20Seminars_ICAC.pdf": {
+  "etag": "\"80274f5f3da2dc1:0\"",
+  "last_modified": "Fri, 20 Feb 2026 07:48:59 GMT",
+  "size": 3396860,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/2025_Financial%20Mgt%20Seminars_Primary.pdf": {
+  "etag": "\"05ac696d86db1:0\"",
+  "last_modified": "Mon, 24 Feb 2025 03:37:22 GMT",
+  "size": 6192437,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/2025_Financial%20Mgt%20Seminars_Scondary.pdf": {
+  "etag": "\"05ac696d86db1:0\"",
+  "last_modified": "Mon, 24 Feb 2025 03:37:22 GMT",
+  "size": 6094146,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/2025_Financial%20Mgt%20Seminars_School%20Audit.pdf": {
+  "etag": "\"80e77f656d86db1:0\"",
+  "last_modified": "Mon, 24 Feb 2025 03:37:15 GMT",
+  "size": 411396,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/2025_Financial%20Mgt%20Seminars_ICAC.pdf": {
+  "etag": "\"0d87a686d86db1:0\"",
+  "last_modified": "Mon, 24 Feb 2025 03:37:20 GMT",
+  "size": 4667537,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/CNEC%20Lau%20Wing%20Sang%20Secondary%20School_20140703.pdf": {
+  "etag": "\"0c5dd1899edcf1:0\"",
+  "last_modified": "Wed, 22 Oct 2014 01:40:02 GMT",
+  "size": 1466125,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/Lions%20College_20140708.pdf": {
+  "etag": "\"8088a71a99edcf1:0\"",
+  "last_modified": "Wed, 22 Oct 2014 01:40:05 GMT",
+  "size": 1350025,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/The%20HK%20Taoist%20Association%20Ching%20Chung%20Secondary%20School_20140709.pdf": {
+  "etag": "\"803c6c1f99edcf1:0\"",
+  "last_modified": "Wed, 22 Oct 2014 01:40:13 GMT",
+  "size": 3314159,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/The%20HK%20Taoist%20Association%20Ching%20Chung%20Secondary%20School_20140709_summary.pdf": {
+  "etag": "\"80f0302499edcf1:0\"",
+  "last_modified": "Wed, 22 Oct 2014 01:40:21 GMT",
+  "size": 134503,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/The%20HK%20Taoist%20Association%20Ching%20Chung%20Secondary%20School_20140709_Work%20Shop.pdf": {
+  "etag": "\"0d342099edcf1:0\"",
+  "last_modified": "Wed, 22 Oct 2014 01:40:14 GMT",
+  "size": 91768,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/The%20HK%20Taoist%20Association%20Ching%20Chung%20Secondary%20School_20140709_Itinerary%20of%20Art%20Day.pdf": {
+  "etag": "\"098ac1799edcf1:0\"",
+  "last_modified": "Wed, 22 Oct 2014 01:40:00 GMT",
+  "size": 77292,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/ELCHK%20Hung%20Hom%20Lutheran%20Primary%20School_20140703.pdf": {
+  "etag": "\"02d672299edcf1:0\"",
+  "last_modified": "Wed, 22 Oct 2014 01:40:18 GMT",
+  "size": 2186562,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/EDB%20RM%20Seminar%2020140709_ICAC.pdf": {
+  "etag": "\"0e5d2899edcf1:0\"",
+  "last_modified": "Wed, 22 Oct 2014 01:40:28 GMT",
+  "size": 2253156,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/ref-materials-on-fin-management-seminars-for-aided-schools/FM_seminars_FAQs_2023.pdf": {
+  "etag": "\"0176435fd2ddc1:0\"",
+  "last_modified": "Thu, 25 Sep 2025 09:17:26 GMT",
+  "size": 655315,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/school-efficiency-grant/EDBC26008TC.pdf": {
+  "etag": "\"078d78645dd1:0\"",
+  "last_modified": "Fri, 26 Jun 2026 12:08:16 GMT",
+  "size": 386675,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/school-efficiency-grant/EDBC26008TC_Annex1.pdf": {
+  "etag": "\"078d78645dd1:0\"",
+  "last_modified": "Fri, 26 Jun 2026 12:08:16 GMT",
+  "size": 369322,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/school-efficiency-grant/EDBC26008TC_Annex2.docx": {
+  "etag": "\"078d78645dd1:0\"",
+  "last_modified": "Fri, 26 Jun 2026 12:08:16 GMT",
+  "size": 42716,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/school-efficiency-grant/SEG_Examples.pdf": {
+  "etag": "\"0393f86e415dd1:0\"",
+  "last_modified": "Fri, 17 Jul 2026 12:05:14 GMT",
+  "size": 281422,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/school-efficiency-grant/SEGQA.pdf": {
+  "etag": "\"80b2d952c51fdd1:0\"",
+  "last_modified": "Thu, 30 Jul 2026 01:47:05 GMT",
+  "size": 268182,
+  "fetched": "2026-09-14"
+ },
+ "https://www.edb.gov.hk/attachment/tc/sch-admin/fin-management/subsidy-info/school-efficiency-grant/SEG%20Online%20Briefing%20Session%20(2026.07.16).pdf": {
+  "etag": "\"0dfdc83e415dd1:0\"",
+  "last_modified": "Fri, 17 Jul 2026 12:05:10 GMT",
+  "size": 2799017,
+  "fetched": "2026-09-14"
+ }
+}

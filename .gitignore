@@ -1,0 +1,6 @@
+cache/*.pdf
+cache/*.doc
+cache/*.docx
+logs/
+__pycache__/
+.DS_Store

@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>學校財務查詢</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#F4F5F2; --surface:#FFFFFF; --ink:#1B2328; --muted:#5F6B72; --line:#D9DED9;
+  --accent:#0B6B5E; --accent-ink:#FFFFFF; --accent-soft:#E3F0EC; --mark:#FFF0A8; --focus:#0B6B5E;
+  --quote-bg:#FAFBF8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#12171A; --surface:#1A2226; --ink:#E6EBEA; --muted:#9AA6AB; --line:#2C363B;
+    --accent:#4FBFAE; --accent-ink:#0E1A18; --accent-soft:#183531; --mark:#5B4B14; --focus:#4FBFAE;
+    --quote-bg:#151C1F;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#12171A; --surface:#1A2226; --ink:#E6EBEA; --muted:#9AA6AB; --line:#2C363B;
+  --accent:#4FBFAE; --accent-ink:#0E1A18; --accent-soft:#183531; --mark:#5B4B14; --focus:#4FBFAE;
+  --quote-bg:#151C1F;
+}
+*{box-sizing:border-box}
+html{color-scheme:light dark}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  font-size:16px; line-height:1.7; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:760px; margin:0 auto; padding-block:40px 64px; padding-inline:20px}
+header{display:flex; flex-direction:column; gap:6px; margin-bottom:28px}
+.eyebrow{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-weight:500}
+h1{
+  font-family:"Noto Serif TC","Songti TC","PMingLiU",serif; font-weight:700;
+  font-size:clamp(26px,4vw,34px); line-height:1.25; margin:0; text-wrap:balance;
+}
+.lede{margin:0; color:var(--muted); font-size:15px}
+form{display:flex; gap:8px; align-items:stretch}
+.field{
+  flex:1; display:flex; align-items:center; background:var(--surface); border:1px solid var(--line);
+  border-radius:6px; padding:0 14px; transition:border-color .15s, box-shadow .15s;
+}
+.field:focus-within{border-color:var(--focus); box-shadow:0 0 0 3px var(--accent-soft)}
+.field input{
+  flex:1; border:0; outline:0; background:transparent; color:var(--ink); font:inherit; font-size:17px;
+  padding:13px 0; min-width:0;
+}
+.field input::placeholder{color:var(--muted)}
+button.go{
+  border:0; border-radius:6px; background:var(--accent); color:var(--accent-ink); font:inherit; font-weight:500;
+  font-size:16px; padding:0 20px; cursor:pointer; white-space:nowrap;
+}
+button.go:hover{filter:brightness(1.06)}
+button.go:focus-visible, .chip:focus-visible, .more:focus-visible, a:focus-visible{outline:2px solid var(--focus); outline-offset:2px}
+.examples{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px}
+.examples-label{font-size:13px; color:var(--muted); align-self:center; margin-right:2px}
+.chip{
+  border:1px solid var(--line); background:var(--surface); color:var(--ink); border-radius:999px;
+  font:inherit; font-size:13.5px; padding:5px 12px; cursor:pointer;
+}
+.chip:hover{border-color:var(--accent); color:var(--accent)}
+main{margin-top:32px}
+.answer{
+  background:var(--surface); border:1px solid var(--line); border-top:3px solid var(--accent); border-radius:6px;
+  padding:18px 22px 16px; margin-bottom:22px;
+}
+.answer h2{margin:0 0 10px; font-size:13px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); font-weight:500}
+.answer ul{margin:0; padding:0; list-style:none; display:flex; flex-direction:column; gap:10px}
+.answer li{
+  font-family:"Noto Serif TC","Songti TC","PMingLiU",serif; font-size:16.5px; line-height:1.8; padding-left:16px; position:relative;
+  overflow-wrap:anywhere;
+}
+.answer li::before{content:""; position:absolute; left:0; top:.85em; width:6px; height:6px; border-radius:50%; background:var(--accent)}
+.answer mark{background:var(--mark); color:inherit; border-radius:2px; padding:0 1px}
+.cite{
+  font-family:"Noto Sans TC",system-ui,sans-serif; font-size:11.5px; font-weight:500; color:var(--accent); text-decoration:none;
+  vertical-align:super; line-height:1; margin-left:2px; padding:0 3px; border-radius:3px; background:var(--accent-soft);
+  font-variant-numeric:tabular-nums;
+}
+.cite:hover{text-decoration:underline}
+.answer .note{margin:12px 0 0; font-size:12.5px; color:var(--muted)}
+.refs{margin:12px 0 0; padding:12px 0 0; border-top:1px solid var(--line); font-size:13.5px; color:var(--muted); display:flex; flex-direction:column; gap:4px}
+.refs .n{display:inline-block; min-width:1.6em; color:var(--accent); font-weight:500; font-variant-numeric:tabular-nums}
+.refs a{color:var(--ink); text-decoration:none}
+.refs a:hover{text-decoration:underline; color:var(--accent)}
+.refs .pg{font-variant-numeric:tabular-nums}
+details.passages{margin-top:6px}
+details.passages > summary{
+  cursor:pointer; list-style:none; color:var(--muted); font-size:14px; padding:8px 0; user-select:none; display:flex; gap:8px; align-items:center;
+}
+details.passages > summary::-webkit-details-marker{display:none}
+details.passages > summary::before{content:"▸"; font-size:12px; color:var(--accent); transition:transform .15s}
+details.passages[open] > summary::before{transform:rotate(90deg)}
+details.passages > summary:hover{color:var(--accent)}
+.hit:target{box-shadow:0 0 0 3px var(--accent-soft); border-color:var(--accent)}
+.status{color:var(--muted); font-size:14px; margin:0 0 14px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap}
+.status b{color:var(--ink); font-weight:500}
+ol.results{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:18px}
+.hit{
+  background:var(--surface); border:1px solid var(--line); border-radius:6px; overflow:hidden;
+}
+.hit blockquote{
+  margin:0; padding:18px 20px 16px 22px; border-left:4px solid var(--accent); background:var(--quote-bg);
+  font-family:"Noto Serif TC","Songti TC","PMingLiU",serif; font-size:16.5px; line-height:1.85; white-space:pre-line;
+  max-width:100%; overflow-wrap:anywhere;
+}
+.hit mark{background:var(--mark); color:inherit; border-radius:2px; padding:0 1px}
+.src{
+  display:flex; flex-wrap:wrap; gap:4px 12px; align-items:baseline; padding:10px 20px 12px; font-size:13.5px; color:var(--muted);
+  border-top:1px solid var(--line);
+}
+.src .label{letter-spacing:.08em; font-size:12px; text-transform:uppercase}
+.src a{color:var(--accent); text-decoration:none; font-weight:500}
+.src a:hover{text-decoration:underline}
+.src .pg{font-variant-numeric:tabular-nums}
+.src .sep{color:var(--line)}
+.kind{
+  display:inline-block; font-size:11px; letter-spacing:.06em; padding:1px 6px; border-radius:3px;
+  background:var(--accent-soft); color:var(--accent); font-weight:500; vertical-align:middle;
+}
+.more{
+  margin:20px auto 0; display:block; border:1px solid var(--line); background:var(--surface); color:var(--ink);
+  border-radius:6px; font:inherit; font-size:14.5px; padding:9px 18px; cursor:pointer;
+}
+.more:hover{border-color:var(--accent); color:var(--accent)}
+.empty{
+  background:var(--surface); border:1px dashed var(--line); border-radius:6px; padding:22px 20px; color:var(--muted); font-size:15px;
+}
+.empty b{color:var(--ink); font-weight:500}
+footer{margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; line-height:1.8}
+footer a{color:var(--muted)}
+footer .db{font-variant-numeric:tabular-nums}
+@media (max-width:520px){
+  .wrap{padding-block:28px 48px}
+  form{flex-direction:column}
+  button.go{padding:12px 20px}
+  .hit blockquote{padding:16px 16px 14px 18px; font-size:16px}
+  .src{padding:10px 16px 12px}
+}
+@media (prefers-reduced-motion: reduce){ *{transition:none !important} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">教育局 · 學校財務管理 · 教職員查詢</div>
+    <h1>學校財務查詢</h1>
+    <p class="lede">輸入問題，即時從教育局「財務管理」網頁及其 PDF／Word 文件中找出相關原文，並列明出處。</p>
+  </header>
+
+  <form id="qform" autocomplete="off">
+    <label class="field" for="q">
+      <input id="q" name="q" type="search" placeholder="例如：採購超過五萬元需要甚麼程序？" aria-label="輸入財務問題" enterkeyhint="search">
+    </label>
+    <button class="go" type="submit" id="go">查詢</button>
+  </form>
+  <div class="examples" id="examples">
+    <span class="examples-label">常見問題</span>
+    <button type="button" class="chip">採購超過五萬元需要甚麼程序？</button>
+    <button type="button" class="chip">接受捐贈有甚麼注意事項？</button>
+    <button type="button" class="chip">營辦開支整筆津貼的盈餘上限</button>
+    <button type="button" class="chip">教職員可否收受禮物？</button>
+    <button type="button" class="chip">整合代課教師津貼如何申請發還？</button>
+  </div>
+
+  <main>
+    <p class="status" id="status" hidden></p>
+    <section class="answer" id="answer" hidden aria-live="polite"></section>
+    <details class="passages" id="passages" hidden>
+      <summary>查看引用的原文段落</summary>
+      <ol class="results" id="results"></ol>
+      <button class="more" id="more" type="button" hidden>顯示更多原文</button>
+    </details>
+  </main>
+
+  <footer>
+    <div id="dbinfo" class="db"></div>
+    <div>資料來源：教育局
+      <a href="https://www.edb.gov.hk/tc/sch-admin/fin-management/about-fin-management/index.html" target="_blank" rel="noopener">有關財務管理</a> ·
+      <a href="https://www.edb.gov.hk/tc/sch-admin/fin-management/subsidy-info/index.html" target="_blank" rel="noopener">津貼資料</a> ·
+      <a href="https://www.edb.gov.hk/tc/sch-admin/fin-management/notes-sch-fin/index.html" target="_blank" rel="noopener">學校財務注意事項</a>
+      及該等網頁連結的文件。以上為原文節錄，詳情請以出處文件為準。</div>
+  </footer>
+</div>
+
+<script src="data/index.js"></script>
+<script>
+(function(){
+  'use strict';
+  var DATA = window.EDB_INDEX;
+  var $ = function(id){ return document.getElementById(id); };
+  var qInput = $('q'), form = $('qform'), results = $('results'), status = $('status'), more = $('more'),
+      answer = $('answer'), passages = $('passages');
+
+  if (!DATA || !DATA.chunks) {
+    status.hidden = false;
+    status.textContent = '找不到資料庫（data/index.js）。請先執行 build_index.py 建立索引。';
+    return;
+  }
+
+  /* ---------- tokenising ---------- */
+  var CJK = '\\u3400-\\u4dbf\\u4e00-\\u9fff\\uf900-\\ufaff';
+  var TOKEN_RE = new RegExp('[' + CJK + ']+|[a-z0-9]+(?:[.,][a-z0-9]+)*', 'g');
+  var CJK_RUN_RE = new RegExp('[' + CJK + ']{2,}', 'g');
+  var PUNCT_RE = /[\s,.;:!?'"()\[\]{}<>\/\\|~`@#$%^&*_+=，。、；：！？「」『』（）《》〈〉【】〔〕—–…·‧　]+/g;
+  // question words / particles that carry no meaning for retrieval
+  var STOP = ['請問','想問','想知道','想了解','我想','可否','可不可以','能否','能不能','是否','應否','需否',
+    '需要','需唔需要','應該','如何','怎樣','怎麼','怎么','點樣','甚麼','什麼','什么','哪些','那些','哪個','哪一','邊個',
+    '有關','關於','對於','的話','一下','有沒有','有冇','是不是','係唔係','有無','幾多','多少','什麽',
+    '幾時','何時','甚麼時候','什麼時候','邊度','哪裡','哪裏','何處','為何','為甚麼','為什麼','點解','幾耐','多久',
+    '本校','我們','我校','學校可否','嗎','吗','呢','呀','啊','嘅','係','的','了','及','和','與','或者','或','在','要','會',
+    '可以','都','也','就','但','而','之','其','有','是','為','以','不','無','沒有','咩','麼','怎'];
+  var STOP_RE = new RegExp(STOP.slice().sort(function(a,b){return b.length-a.length;})
+    .map(function(s){return s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');}).join('|'), 'g');
+
+  function cnNumber(str){
+    var digit = { 零:0, 一:1, 二:2, 兩:2, 三:3, 四:4, 五:5, 六:6, 七:7, 八:8, 九:9 }, unit = { 十:10, 百:100, 千:1000 };
+    var total = 0, section = 0, num = 0;
+    for (var i = 0; i < str.length; i++) {
+      var ch = str[i];
+      if (ch in digit) num = digit[ch];
+      else if (ch in unit) { section += (num || 1) * unit[ch]; num = 0; }
+      else if (ch === '萬') { total += (section + num || 1) * 10000; section = 0; num = 0; }
+    }
+    return total + section + num;
+  }
+
+  function tokens(text){
+    var out = [], m, s = text.toLowerCase();
+    TOKEN_RE.lastIndex = 0;
+    while ((m = TOKEN_RE.exec(s))) {
+      var w = m[0];
+      if (/^[a-z0-9]/.test(w)) { out.push(w); continue; }
+      if (w.length === 1) { out.push(w); continue; }
+      for (var i = 0; i < w.length - 1; i++) out.push(w.slice(i, i + 2));
+    }
+    return out;
+  }
+
+  /* ---------- build BM25 index once ---------- */
+  var chunks = DATA.chunks, sources = DATA.sources, N = chunks.length;
+  var postings = Object.create(null), docLen = new Array(N), totalLen = 0;
+  for (var d = 0; d < N; d++) {
+    var toks = tokens(chunks[d].t + ' ' + sources[chunks[d].s].title);
+    docLen[d] = toks.length; totalLen += toks.length;
+    var tf = Object.create(null);
+    for (var k = 0; k < toks.length; k++) tf[toks[k]] = (tf[toks[k]] || 0) + 1;
+    for (var term in tf) (postings[term] || (postings[term] = [])).push(d, tf[term]);
+  }
+  var avgdl = totalLen / N, K1 = 1.4, B = 0.7;
+
+  function search(raw){
+    var cleaned = raw.toLowerCase().replace(PUNCT_RE, ' ').replace(STOP_RE, ' ').replace(/\s+/g, ' ').trim();
+    if (!cleaned) cleaned = raw.toLowerCase().replace(PUNCT_RE, ' ').trim();
+    if (!cleaned) return { hits: [], phrases: [] };
+
+    // phrases = meaningful contiguous pieces of the question (CJK runs ≥2, latin words)
+    var phrases = (cleaned.match(CJK_RUN_RE) || []).concat(cleaned.match(/[a-z0-9]+(?:[.,][a-z0-9]+)*/g) || []);
+    phrases = phrases.filter(function(p, i, a){ return a.indexOf(p) === i; });
+    // Chinese numerals in the question (五萬元, 二十萬, 兩千) → the Arabic forms documents use
+    var numRe = /[零一二兩三四五六七八九十百千萬]{1,8}(?=元|蚊|萬|千|百|以上|以下|或)/g, nm, extra = [];
+    while ((nm = numRe.exec(cleaned))) {
+      var v = cnNumber(nm[0]);
+      if (v >= 100) { extra.push(String(v)); extra.push(v.toLocaleString('en-US')); }
+    }
+    if (extra.length) { phrases = phrases.concat(extra); cleaned += ' ' + extra.join(' '); }
+
+    var qTerms = tokens(cleaned), seenTerm = Object.create(null), scores = new Float64Array(N);
+    for (var i = 0; i < qTerms.length; i++) {
+      var t = qTerms[i]; if (seenTerm[t]) continue; seenTerm[t] = 1;
+      var pl = postings[t]; if (!pl) continue;
+      var n = pl.length / 2, idf = Math.log(1 + (N - n + 0.5) / (n + 0.5));
+      for (var j = 0; j < pl.length; j += 2) {
+        var doc = pl[j], f = pl[j + 1];
+        scores[doc] += idf * (f * (K1 + 1)) / (f + K1 * (1 - B + B * docLen[doc] / avgdl));
+      }
+    }
+    // exact phrase bonus: reward chunks containing whole pieces of the question, longer pieces more
+    var cands = [];
+    for (var c = 0; c < N; c++) {
+      if (scores[c] <= 0) continue;
+      var text = chunks[c].t.toLowerCase(), title = sources[chunks[c].s].title.toLowerCase(), bonus = 0;
+      for (var p = 0; p < phrases.length; p++) {
+        var ph = phrases[p];
+        if (ph.length < 2) continue;
+        if (text.indexOf(ph) >= 0) bonus += Math.min(ph.length, 8) * 0.9;
+        else if (title.indexOf(ph) >= 0) bonus += Math.min(ph.length, 8) * 0.5;
+      }
+      cands.push([c, scores[c] + bonus]);
+    }
+    cands.sort(function(a, b){ return b[1] - a[1]; });
+    // at most two passages per document so several sources get a voice
+    var perSource = Object.create(null), hits = [];
+    for (var h = 0; h < cands.length && hits.length < 30; h++) {
+      var sid = chunks[cands[h][0]].s;
+      perSource[sid] = (perSource[sid] || 0) + 1;
+      if (perSource[sid] > 2) continue;
+      hits.push(cands[h][0]);
+    }
+    return { hits: hits, phrases: phrases };
+  }
+
+  /* ---------- extractive synthesis (no AI): pick the sentences that best answer the question ---------- */
+  var SENT_SPLIT = /(?<=[。；！？!?])|\n+/;
+  var DIRECTIVE = /(須|應|必須|不得|不可|不應|可以|可|毋須|無須|禁止|上限|下限|不少於|不多於|最少|最多|超過|以下|以上|以內|之前|或之前|年内|截止|批准|批核|申請|記錄|備存|保留|發還|退還|撥入|撥款|退回)/;
+  var NOISE = /^(目錄|附錄|附件|內容頁數|第.{1,4}頁|頁\d|常見審計結果|有關詳情|如有查詢)|(\.{3,}|…{2,})|^[^\u3400-\u9fff\uf900-\ufaffA-Za-z0-9]*$|＞|https?:|www\.|上載於|載於附件|請按以下|路徑|範本載於|例[:：︰]|例如[:：︰]$|^[［\[]|(?:[➢\uf0d8\uf0a7\uf0b7\uf0fc].*){2,}|\s>\s|以下路徑|\s(PDF|Word|MS Word)\s*$/;
+  var SOFT_NOISE = /參閱|載於|以下文件|如下|詳情|附件|附錄|範例|樣本/;
+  var LETTER_LIST = /(?:^|[^A-Za-z])[A-H](?:[^A-Za-z]{2,40})[A-H](?:[^A-Za-z]{2,40})[A-H](?:[^A-Za-z]|$)/;   // 附錄A … B … C (tables of contents)
+  var LEAD_NUM = /^\s*(?:\(?[a-zA-Z0-9ivx]{1,4}\)|[0-9]{1,3}(?:\.[0-9]{1,2})*\.?|[•⚫●■◆▪◦※＊*‧·\-–—]|附件\s?\S{1,3}|附錄\s?\S{1,3})\s*/;
+
+  function bigramSet(text){
+    var set = Object.create(null), t = tokens(text);
+    for (var i = 0; i < t.length; i++) set[t[i]] = 1;
+    return set;
+  }
+  function overlap(a, b){
+    var inter = 0, na = 0, nb = 0, k;
+    for (k in a) { na++; if (b[k]) inter++; }
+    for (k in b) nb++;
+    return inter / Math.max(1, Math.min(na, nb));
+  }
+
+  function synthesise(hits, phrases, raw){
+    var qset = bigramSet(raw.replace(PUNCT_RE, ' ').replace(STOP_RE, ' '));
+    var wantsTime = /幾時|何時|時候|日期|截止|限期|幾耐|多久|期限|甚麼時間|什麼時間/.test(raw);
+    var wantsAmount = /幾多|多少|金額|上限|下限|限額|幾錢|多少錢|百分比|比例|津貼額|款額/.test(raw);
+    var qCount = Object.keys(qset).length;
+    if (!qCount) return [];
+    var cands = [];
+    hits.slice(0, 12).forEach(function(idx, rank){
+      var ch = chunks[idx];
+      var sents = ch.t.split(SENT_SPLIT).map(function(x){ return x.replace(LEAD_NUM, '').trim(); }).filter(Boolean);
+      // FAQ documents: score the question line but quote the answer that follows it
+      var merged = [];
+      for (var si = 0; si < sents.length; si++) {
+        if (/^問[:：︰]/.test(sents[si])) {
+          var qs = [sents[si]], ans = [], sj = si + 1;
+          while (sj < sents.length && !/^[問答][:：︰]/.test(sents[sj])) qs.push(sents[sj++]);
+          if (sj < sents.length && /^答[:：︰]/.test(sents[sj])) {
+            for (; sj < sents.length && ans.join('').length < 170; sj++) {
+              if (/^問[:：︰]/.test(sents[sj])) break;
+              ans.push(sents[sj].replace(/^答[:：︰]\s*/, ''));
+            }
+          }
+          if (ans.length) { merged.push({ text: ans.join(''), scoreText: qs.join('') + ans.join(''), faq: true }); si = sj - 1; continue; }
+        }
+        merged.push({ text: sents[si], scoreText: sents[si], faq: false });
+      }
+      merged.forEach(function(item){
+        var text = item.text;
+        var bare = text.replace(/\s/g, '');
+        if (bare.length < 14 || bare.length > 170 || NOISE.test(bare)) return;
+        var digits = (bare.match(/\d/g) || []).length;
+        if (digits > bare.length * 0.35) return;               // tables / TOC lines
+        if (LETTER_LIST.test(text)) return;
+        if ((text.match(/第\S{1,6}[段條項]/g) || []).length >= 2) return;   // cross-reference lists
+        var sset = bigramSet(item.scoreText), hit = 0, k;
+        for (k in qset) if (sset[k]) hit++;
+        var coverage = hit / qCount;                             // how much of the question this sentence touches
+        var score = coverage * 3;
+        var low = item.scoreText.toLowerCase(), phraseHits = 0;
+        phrases.forEach(function(p){ if (p.length >= 2 && low.indexOf(p) >= 0) { score += Math.min(p.length, 8) * 0.25; phraseHits++; } });
+        if (phrases.length && !phraseHits) score -= 0.8;         // scattered bigram matches only
+        if (DIRECTIVE.test(text)) score += 0.6;                  // rules/limits read as answers
+        if (item.faq) score += 0.7;                              // an FAQ answer is already an answer
+        var unterminated = !/[。；！？!?」』）)]\s*$/.test(text);
+        if (!item.faq && unterminated && bare.length < 40) return;             // headings / list labels
+        if (!item.faq && unterminated) score -= 0.9;
+        if (wantsTime && /\d{1,2}月\d{1,2}日|\d{4}年|或之前|之前|之後|限期|截止|學年內|個月內|日內|曆日/.test(text)) score += 1.2;
+        if (wantsAmount && /\d[\d,]*\s?(元|%|％|萬)/.test(text)) score += 0.8;
+        if (SOFT_NOISE.test(text)) score -= 0.6;                 // "see annex" style cross-references
+        if (/^問[:：︰]/.test(text)) return;
+        score += Math.max(0, 1.2 - rank * 0.12);                 // trust the passage ranking a little
+        if (bare.length < 25) score -= 0.4;
+        if (coverage === 0 && score < 1.6) return;
+        cands.push({ text: text.replace(/^(答[:：︰]\s*)/, ''), score: score, set: bigramSet(text), chunk: idx });
+      });
+    });
+    cands.sort(function(a, b){ return b.score - a.score; });
+    var chosen = [];
+    for (var i = 0; i < cands.length && chosen.length < 5; i++) {
+      var c = cands[i], dup = false;
+      if (chosen.length && c.score < chosen[0].score * 0.55) break;   // stop once relevance drops off
+      for (var j = 0; j < chosen.length; j++) if (overlap(c.set, chosen[j].set) > 0.5) { dup = true; break; }
+      if (!dup) chosen.push(c);
+    }
+    return chosen;
+  }
+
+  /* ---------- rendering ---------- */
+  function esc(s){ return s.replace(/[&<>"]/g, function(ch){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]; }); }
+  function highlight(text, phrases){
+    var safe = esc(text);
+    var ps = phrases.filter(function(p){ return p.length >= 2; }).sort(function(a, b){ return b.length - a.length; });
+    if (!ps.length) return safe;
+    var re = new RegExp('(' + ps.map(function(p){ return esc(p).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }).join('|') + ')', 'gi');
+    return safe.replace(re, '<mark>$1</mark>');
+  }
+  var KIND = { pdf: 'PDF', doc: 'Word', docx: 'Word', web: '網頁' };
+  function docLink(src, page){
+    if (src.type === 'pdf' && page) return src.url + '#page=' + page;
+    return src.url;
+  }
+  function renderHit(idx, phrases){
+    var ch = chunks[idx], src = sources[ch.s];
+    var li = document.createElement('li'); li.className = 'hit'; li.id = 'p' + idx;
+    var pageBit = ch.p ? '<span class="pg">第 ' + ch.p + ' 頁</span>' : '';
+    var fromPage = src.type !== 'web' ? '<span class="sep">|</span><a href="' + esc(src.page_url) + '" target="_blank" rel="noopener">' + esc(src.page_title) + '</a>' : '';
+    li.innerHTML =
+      '<blockquote>' + highlight(ch.t, phrases) + '</blockquote>' +
+      '<div class="src"><span class="label">出處</span>' +
+      '<span class="kind">' + (KIND[src.type] || src.type) + '</span>' +
+      '<a href="' + esc(docLink(src, ch.p)) + '" target="_blank" rel="noopener">' + esc(src.title) + '</a>' +
+      pageBit + fromPage + '</div>';
+    return li;
+  }
+
+  function renderAnswer(picks, phrases){
+    answer.hidden = false;
+    if (!picks.length) {
+      answer.innerHTML = '<h2>綜合答案</h2><p class="note">找到相關段落，但沒有句子足以直接回答問題。請展開下方原文查看。</p>';
+      return;
+    }
+    var refs = [], refIndex = Object.create(null);
+    var items = picks.map(function(pk){
+      var ch = chunks[pk.chunk], src = sources[ch.s], key = ch.s + ':' + (ch.p || '');
+      if (!(key in refIndex)) { refIndex[key] = refs.length + 1; refs.push({ src: src, p: ch.p, chunk: pk.chunk }); }
+      var n = refIndex[key];
+      var body = highlight(pk.text, phrases);
+      if (!/[。；！？!?」』）)]$/.test(pk.text)) body += '。';
+      return '<li>' + body + '<a class="cite" href="#p' + pk.chunk + '" title="查看原文段落" data-open>' + n + '</a></li>';
+    });
+    var refHtml = refs.map(function(r, i){
+      var pg = r.p ? '<span class="pg">，第 ' + r.p + ' 頁</span>' : '';
+      return '<div><span class="n">' + (i + 1) + '</span><a href="' + esc(docLink(r.src, r.p)) + '" target="_blank" rel="noopener">' + esc(r.src.title) + '</a>' + pg +
+        '<span class="sep"> · </span><span class="kind">' + (KIND[r.src.type] || r.src.type) + '</span></div>';
+    });
+    answer.innerHTML = '<h2>綜合答案</h2><ul>' + items.join('') + '</ul>' +
+      '<div class="refs">' + refHtml.join('') + '</div>' +
+      '<p class="note">以上每句均為教育局文件原文，按問題相關度自動挑選及排列，並非人工或 AI 撰寫。詳情請以出處為準。</p>';
+  }
+  answer.addEventListener('click', function(e){
+    var a = e.target.closest('a[data-open]'); if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    passages.open = true;
+    // make sure the referenced passage is rendered before jumping to it
+    while (!document.getElementById(id) && current.shown < current.hits.length) showMore();
+  });
+
+  var current = { hits: [], phrases: [], shown: 0 }, PAGE = 5;
+  function showMore(){
+    var end = Math.min(current.shown + PAGE, current.hits.length);
+    for (var i = current.shown; i < end; i++) results.appendChild(renderHit(current.hits[i], current.phrases));
+    current.shown = end;
+    more.hidden = current.shown >= current.hits.length;
+  }
+  function run(q){
+    q = q.trim();
+    results.innerHTML = ''; more.hidden = true; answer.hidden = true; passages.hidden = true;
+    if (!q) { status.hidden = true; return; }
+    var r = search(q);
+    current = { hits: r.hits, phrases: r.phrases, shown: 0 };
+    status.hidden = false;
+    if (!r.hits.length) {
+      status.innerHTML = '「<b>' + esc(q) + '</b>」';
+      results.innerHTML = '<li class="empty">找不到相關原文。請試用文件常用字眼，例如 <b>採購</b>、<b>報價</b>、<b>捐贈</b>、<b>津貼</b>、<b>盈餘</b>、<b>核數</b>。</li>';
+      return;
+    }
+    status.innerHTML = '<span>「<b>' + esc(q) + '</b>」</span><span>引用 ' + r.hits.length + ' 段原文</span>';
+    renderAnswer(synthesise(r.hits, r.phrases, q), r.phrases);
+    passages.hidden = false; passages.open = false;
+    showMore();
+    try { history.replaceState(null, '', '?q=' + encodeURIComponent(q)); } catch (e) {}
+  }
+
+  form.addEventListener('submit', function(e){ e.preventDefault(); run(qInput.value); });
+  more.addEventListener('click', showMore);
+  $('examples').addEventListener('click', function(e){
+    var b = e.target.closest('.chip'); if (!b) return;
+    qInput.value = b.textContent; run(qInput.value);
+  });
+
+  var c = DATA.counts || {};
+  $('dbinfo').textContent = '資料庫更新日期：' + DATA.built + '　·　' + (c.documents || 0) + ' 份文件、' + (c.pages || 0) + ' 個網頁、' + (c.chunks || 0) + ' 段原文　·　檢索在本機瀏覽器完成，不會傳送任何內容。';
+
+  var initial = new URLSearchParams(location.search).get('q');
+  if (initial) { qInput.value = initial; run(initial); }
+})();
+</script>
+</body>
+</html>
